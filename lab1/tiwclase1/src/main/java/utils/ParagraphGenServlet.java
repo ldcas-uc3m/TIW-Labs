@@ -12,26 +12,24 @@ import javax.servlet.http.HttpServletResponse;
 		urlPatterns = { "/utils/ParGen" })
 public class ParagraphGenServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-   
+
     public ParagraphGenServlet() {
         super();
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		doPost(request,response);
+		doPost(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
-		
+
 		int value = Integer.parseInt(request.getParameter("numPars"));
 		String pText = request.getParameter("pText");
-		for( int i = 0 ; i< value; i++) {
-			response.getWriter().append("<p>"+pText+"</p>");
+
+		for (int i = 0; i< value; i++) {
+			response.getWriter().append("<p>"+ pText +"</p>");
 		}
-		
+
 	}
 
 }
