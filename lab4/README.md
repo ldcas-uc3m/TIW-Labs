@@ -4,8 +4,8 @@
 ## Setup
 1. [Install the enviroment](../README.md#instalación-del-entorno)
 2. Download and install [MySQL Community Server 8.1.0](https://dev.mysql.com/downloads/mysql/) and, optionally, [MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
-3. Download the [MySQL driver](https://dev.mysql.com/downloads/connector/j/) and save the `mysql-connector-j-8.1.0.jar` to `<payara-path>/glassfish/lib`.
-4. Start MySQL server
+3. Download the [MySQL Java driver](https://dev.mysql.com/downloads/connector/j/) and save the `mysql-connector-j-8.1.0.jar` to `<payara-path>/glassfish/lib`.
+4. Start MySQL server (if it's not started already)
     - Linux
         ```bash
         $ sudo systemctl start mysqld
