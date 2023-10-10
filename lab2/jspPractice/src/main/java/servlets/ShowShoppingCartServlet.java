@@ -21,15 +21,14 @@ public class ShowShoppingCartServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
-		//creo en la sesión un atributo 'cart'
-		request.setAttribute("cart", new ShoppingCart(140,123.3f));
+		// creo en la sesión un atributo 'cart'
+		request.setAttribute("cart", new ShoppingCart(140, 123.3f));
 		request.getRequestDispatcher("ShoppingCartPage.jsp").forward(request, response);
 		
 		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 

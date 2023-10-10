@@ -22,7 +22,7 @@ request.getRequestDispatcher("/utils/PopulateSongs").include(request,response);
 
 ## Ejercicio 3 - Declarations
 
-Crea una variable global para una JSP que se llame `AccessCounting.jsp` que almacene el número de veces que se ha accedido la página, actualizándola cada vez que se produce cualquier tipo de request a la misma.  
+Crea una variable global para una JSP que se llame [`AccessCounting.jsp`](jspPractice/src/main/webapp/AccessCounting.jsp) que almacene el número de veces que se ha accedido la página, actualizándola cada vez que se produce cualquier tipo de request a la misma.  
 Utiliza una _JSP Declaration_ para crear un método auxiliar llamado `UpdateCounter` que se encarga de actualizar la variable.
 
 
@@ -38,8 +38,8 @@ Modifica la anterior JSP y el archivo [`web.xml`](jspPractice/src/main/webapp/WE
 
 
 ## Ejercicio 5 - JSP Include y Page Consistency
-Crea una página `header.html` que represente la cabecera estándar de tu web y usa una directive del tipo
-`<%@include file="path.html">` para hacer que aparezca en todas las JSPs existentes.
+Crea una página [`header.html`](jspPractice/src/main/webapp/header.html) que represente la cabecera estándar de tu web y usa una directive del tipo
+`<% @include file="<path>.html" %>` para hacer que aparezca en todas las JSPs existentes.
 
 
 ## Ejercicio 6 - Usando Java Beans: Las JSP en MVC
@@ -48,4 +48,4 @@ Crea una página `header.html` que represente la cabecera estándar de tu web y 
 > Por ejemplo, conviene utilizar Servlets para realizar operaciones y luego encapsular información necesaria en algún atributo (de response, sesión, etc.) para que luego la JSP muestre aquello que se le proporciona y ya.
 
 Al llamar a `/ShowShoppingCart`, un _Servlet_ (ver [`ShowShoppingCartServlet.java`](jspPractice/src/main/java/servlets/ShowShoppingCartServlet.java)) genera un atributo llamado `cart` en el contexto de la sesión.  
-Crea una JSP llamada [`ShoppingCartPage.jsp`](jspPractice/src/main/webapp/ShoppingCartPage.jsp) y extrae la información y muéstrala usando _JSP Actions_ (`<jsp:useBean>`, `<jsp:getAttribute>`, etc.)
+Crea una JSP llamada [`ShoppingCartPage.jsp`](jspPractice/src/main/webapp/ShoppingCartPage.jsp) y extrae la información y muéstrala usando _JSP Actions_ (`<jsp:getProperty>`, `<jsp:getAttribute>`, etc.)

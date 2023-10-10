@@ -12,6 +12,8 @@
 <title>Error page</title>
 </head>
 <body>
+<%@ include file="header.html" %>
+
 <h1>&Oacute;w&Ograve; I'm s-sowwy &gt;~&lt; wiww wu forgive me? &Uacute;w&Ugrave;</h1>
 <p>Error code: <%=request.getAttribute("javax.servlet.error.status_code")%></p>
 

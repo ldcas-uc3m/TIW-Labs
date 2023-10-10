@@ -12,6 +12,9 @@
   <title>ShowRequestParameters</title>
 </head>
 <body>
+
+<%@ include file="header.html" %>
+
 <%
 // get parameters
 Map<String, String[]> parameters = request.getParameterMap();

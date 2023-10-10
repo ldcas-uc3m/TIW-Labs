@@ -8,6 +8,7 @@
 <title>Page Shown on exception</title>
 </head>
 <body>
+<%@ include file="header.html" %>
 
 <%! int errorTypeFlag = 3; %>
 

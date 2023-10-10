@@ -14,6 +14,7 @@
 	<title>SongListing</title>
 </head>
 <body>
+<%@ include file="header.html" %>
 
 <h1>Lista de canciones</h1>
 
