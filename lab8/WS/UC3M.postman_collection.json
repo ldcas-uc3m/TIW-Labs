@@ -1,0 +1,1319 @@
+{
+	"info": {
+		"_postman_id": "fd466fcb-3ab5-446c-8e79-7ba3fae72193",
+		"name": "UC3M",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2627556"
+	},
+	"item": [
+		{
+			"name": "WS - RestFul",
+			"item": [
+				{
+					"name": "Validacion - DNI",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/LabRESTFULService/rest/validaciones/validaciondni/04173284a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRESTFULService",
+								"rest",
+								"validaciones",
+								"validaciondni",
+								"04173284a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Saludos - Saludo (Sin parámetro)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/LabRESTFULService/rest/saludos/saludo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRESTFULService",
+								"rest",
+								"saludos",
+								"saludo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Saludos - Saludo (Con parámetro)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/LabRESTFULService/rest/saludos/persona/Pedro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRESTFULService",
+								"rest",
+								"saludos",
+								"persona",
+								"Pedro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Codificaciones - Código de Pedido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/LabRESTFULService/rest/codificaciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRESTFULService",
+								"rest",
+								"codificaciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Codificaciones - Código de Pedido (JSON)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"codPedido\":\"123456789\",\"coste\":100,\"tarjeta\":\"1234567890123456789\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/LabRESTFULService/rest/codificaciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRESTFULService",
+								"rest",
+								"codificaciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Estudiantes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/LabRESTFULService/rest/students/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRESTFULService",
+								"rest",
+								"students",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Saludos - json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/LabRestFulTIW/rest/saludos/json",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRestFulTIW",
+								"rest",
+								"saludos",
+								"json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Saludos - XML",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/LabRestFulTIW/rest/saludos/xml",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRestFulTIW",
+								"rest",
+								"saludos",
+								"xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Saludos - json param",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/LabRestFulTIW/rest/saludos/mjson/swwqewqewe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRestFulTIW",
+								"rest",
+								"saludos",
+								"mjson",
+								"swwqewqewe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Saludos - json JSON Body",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"saludo\":\"123456789\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/LabRestFulTIW/rest/saludos/post/crearBienvenida",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRestFulTIW",
+								"rest",
+								"saludos",
+								"post",
+								"crearBienvenida"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Saludos - texto plano",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/LabRestFulTIW/rest/saludos/textplain",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LabRestFulTIW",
+								"rest",
+								"saludos",
+								"textplain"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Spring",
+			"item": [
+				{
+					"name": "Ejempo - SprintData",
+					"item": [
+						{
+							"name": "Lista de Usuarios",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8086/TIdWSpringData/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"TIdWSpringData",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear Usuario",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"idUser\": 10,\n \"name\": \"Aurelio\",\n\"surname\": \"Arroyo Bermejo\",\n \"age\": 23\n }"
+								},
+								"url": {
+									"raw": "http://localhost:8086/TIdWSpringData/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"TIdWSpringData",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Búsqueda Usuario por su Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8086/TIdWSpringData/users/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"TIdWSpringData",
+										"users",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Búsqueda Usuario por Nombre (usersSearch)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8086/TIdWSpringData/usersSearch?name=Aurelio",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"TIdWSpringData",
+										"usersSearch"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Aurelio"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Número de Usuarios (userCount)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8086/TIdWSpringData/userCount",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"TIdWSpringData",
+										"userCount"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CalculadoraTIdW",
+					"item": [
+						{
+							"name": "Sum (@RequestParam)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/CalculadoraTIdW/sum?operand1=1&operand2=s",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"CalculadoraTIdW",
+										"sum"
+									],
+									"query": [
+										{
+											"key": "operand1",
+											"value": "1"
+										},
+										{
+											"key": "operand2",
+											"value": "s"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sum (@RequestBody)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"operand1\":10,\"operand2\":23}"
+								},
+								"url": {
+									"raw": "http://localhost:8081/CalculadoraTIdW/sum",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"CalculadoraTIdW",
+										"sum"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sum (@PathVariable)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/CalculadoraTIdW/sum/3/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"CalculadoraTIdW",
+										"sum",
+										"3",
+										"8"
+									]
+								},
+								"description": "@RequestMapping(value = \"/sum/{operand1}/{operand2}\", method = RequestMethod.GET)\n\tpublic Result sumGetPath(@PathVariable int operand1, @PathVariable int operand2)"
+							},
+							"response": []
+						},
+						{
+							"name": "Subtraction (@RequestParam)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/CalculadoraTIdW/subtraction?operand1=1&operand2=90",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"CalculadoraTIdW",
+										"subtraction"
+									],
+									"query": [
+										{
+											"key": "operand1",
+											"value": "1"
+										},
+										{
+											"key": "operand2",
+											"value": "90"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Subtraction (@RequestBody)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"operand1\":10,\"operand2\":23}"
+								},
+								"url": {
+									"raw": "http://localhost:8081/CalculadoraTIdW/subtraction",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"CalculadoraTIdW",
+										"subtraction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Subtraction (@PathVariable)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/CalculadoraTIdW/subtraction/8/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"CalculadoraTIdW",
+										"subtraction",
+										"8",
+										"5"
+									]
+								},
+								"description": "@RequestMapping(value = \"/subtraction/{operand1}/{operand2}\", method = RequestMethod.GET)\n\tpublic Result subtractionGetPath(@PathVariable int operand1, @PathVariable int operand2) {"
+							},
+							"response": []
+						},
+						{
+							"name": "Multiplication (@RequestParam)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/CalculadoraTIdW/multiplication?operand1=13&operand2=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"CalculadoraTIdW",
+										"multiplication"
+									],
+									"query": [
+										{
+											"key": "operand1",
+											"value": "13"
+										},
+										{
+											"key": "operand2",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "multiplication (@RequestBody)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"operand1\":10,\"operand2\":23}"
+								},
+								"url": {
+									"raw": "http://localhost:8081/CalculadoraTIdW/subtraction",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"CalculadoraTIdW",
+										"subtraction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Multiplication (@PathVariable)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/CalculadoraTIdW/multiplication/7/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"CalculadoraTIdW",
+										"multiplication",
+										"7",
+										"8"
+									]
+								},
+								"description": "\t@RequestMapping(value = \"/multiplication/{operand1}/{operand2}\", method = RequestMethod.GET)\n\tpublic Result multiplicationGetPath(@PathVariable int operand1, @PathVariable int operand2) {"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Chat",
+					"item": [
+						{
+							"name": "Lista Emisor & Receptor",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8030/conversaciones/ahhhhhhh@aa.com/a@jjjjjja.com/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8030",
+									"path": [
+										"conversaciones",
+										"ahhhhhhh@aa.com",
+										"a@jjjjjja.com",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Lista Mensajes Emisor",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8030/usuariomensajes/agrupo82@aa",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8030",
+									"path": [
+										"usuariomensajes",
+										"agrupo82@aa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Lista Mensajes Like",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8030/usuariomensajes/ahhhhhhh@aa.com/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8030",
+									"path": [
+										"usuariomensajes",
+										"ahhhhhhh@aa.com",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CrearMensaje en MongoDB",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"emailori\":\"ahhhhhhh@aa.com\", \"emaildest\":\"a@jjjjjja.com\",\"mensaje\":\"coste de la solucion\"}"
+								},
+								"url": {
+									"raw": "http://localhost:8030/mensaje",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8030",
+									"path": [
+										"mensaje"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Discos",
+					"item": [
+						{
+							"name": "GET Disco por Año",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/discos?anyo=2000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"discos"
+									],
+									"query": [
+										{
+											"key": "anyo",
+											"value": "2000"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8084/discos?anyo=1999",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/discos?anyo=2001",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"discos"
+									],
+									"query": [
+										{
+											"key": "anyo",
+											"value": "2001"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Fianciera",
+					"item": [
+						{
+							"name": "Gestion Bancaria",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"var dateNow = new Date();  ",
+											"var twoWeeksFutureDate = new Date(dateNow.setDate(dateNow.getDate() + 14));",
+											"",
+											"postman.setEnvironmentVariable(\"fecha-futura\", twoWeeksFutureDate);",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"codPedido\": \"2222322\",\n    \"coste\": 100,\n    \"fechaTarjeta\": 20220101,\n    \"cv2\":123,\n    \"numeroTarjeta\": 1110211111111101\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/home/transaccion",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"home",
+										"transaccion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PedidosPorTarjeta",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "http://localhost:8083/home/pedido/1111111111111101",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"home",
+										"pedido",
+										"1111111111111101"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ListaPedidos",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "http://localhost:8083/home/pedidos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"home",
+										"pedidos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Lab-demoClaseMySQL",
+					"item": [
+						{
+							"name": "List-users",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"carlos\",\n    \"surname\": \"hernando corrochano\",\n    \"address\": [\n        {\n            \"street\": \"toledo\",\n            \"postcode\": 1111\n        },\n        {\n            \"street\": \"talavera\",\n            \"postcode\": 222\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List-users Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"luis\",\n    \"surname\": \"garcia\",\n    \"address\":[\n        {\n            \"street\": \"toledo\",\n            \"postcode\": 1111\n        },\n        {\n            \"street\": \"talavera\",\n            \"postcode\": 222\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get-user",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"carlos\",\n    \"surname\": \"corrochano\",\n    \"address\": [\n        {\n            \"street\": \"segurilla, toledo\",\n            \"postcode\": 1111\n        },\n        {\n            \"street\": \"talavera, toledo\",\n            \"postcode\": 222\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/users/carlos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"users",
+										"carlos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get-Street",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"carlos\",\n    \"surname\": \"corrochano\",\n    \"address\": [\n        {\n            \"street\": \"segurilla, toledo\",\n            \"postcode\": 1111\n        },\n        {\n            \"street\": \"talavera, toledo\",\n            \"postcode\": 222\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/addresses/Somewhere",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"addresses",
+										"Somewhere"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "LabSpringSecurity",
+					"item": [
+						{
+							"name": "Get-Authorization",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "user",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "user",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8043/labspringsecurity/country/3/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"labspringsecurity",
+										"country",
+										"3",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete-NoAutorization",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "user",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "user",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8043/labspringsecurity/country/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"labspringsecurity",
+										"country",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get-Test",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8043/labspringsecurity/test",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"labspringsecurity",
+										"test"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get-SinAuthorization",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "user",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "user",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8043/labspringsecurity/country/3/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"labspringsecurity",
+										"country",
+										"3",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete-Authorization",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "admin",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8043/labspringsecurity/country/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"labspringsecurity",
+										"country",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SOAP",
+			"item": []
+		},
+		{
+			"name": "jsonplaceholder.typicode.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
