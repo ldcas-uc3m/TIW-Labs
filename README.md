@@ -17,6 +17,18 @@ El objetivo es el primer acceso a una BBDD vía JDBC y se deja al alumn@ la gene
 ## Laboratorio 4: JDBC II
 Se pretende con este Lab que el alumno utlice JDBC y acceda a la BBDD en MySQL también mediante pool de conexiones (DataSource)
 
+## Laboratorio 6: JPA
+Se pretende con este Lab que el alumno utlice JPA y acceda a la BBDD en MySQL.
+
+## Laboratorio 7: Imágenes
+Se pretende con este Lab que el alumno almacene imágenes en la BBDD de MySQL.
+
+## Laboratorio 8: WebServices
+Se pretende con este Lab que el alumno cree un Servidor y Cliente WS.
+
+## Laboratorio 9: JMS
+Se pretende con este Lab que el alumno interactúe con colas asíncronas de JMS.
+
 
 ## Instalación del entorno.
 
