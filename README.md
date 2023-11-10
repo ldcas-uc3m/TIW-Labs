@@ -30,7 +30,7 @@ Se pretende con este Lab que el alumno cree un Servidor y Cliente WS.
 Se pretende con este Lab que el alumno interactúe con colas asíncronas de JMS.
 
 
-## Instalación del entorno.
+## Instalación del entorno (Labs 1-9)
 
 El proyecto está desarrollado y pensado para ejecutarse en Eclipse con Payara, recomendamos las versiones específicas.  
 Para importar el proyecto:
