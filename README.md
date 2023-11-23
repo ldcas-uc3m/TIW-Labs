@@ -5,29 +5,38 @@ Bachelor's Degree in Computer Science and Engineering
 Universidad Carlos III de Madrid
 
 
-## Laboratorio 1: Servlets
+### [Laboratorio 1: Servlets](lab1/)
 El objetivo subyacente de este laboratorio es el desarrollo y configuración de una aplicación Web Dinamica (*.war)
 
-## Laboratorio 2: JSPs
+### [Laboratorio 2: JSPs](lab3)
 El objetivo subyacente de este laboratorio es el desarrollo y configuración de una aplicación Web Dinamica (*.war)
 
-## Laboratorio 3: JDBC I
+### [Laboratorio 3: JDBC I](lab4/)
 El objetivo es el primer acceso a una BBDD vía JDBC y se deja al alumn@ la generación de la salida vía una JSP.
 
-## Laboratorio 4: JDBC II
+### [Laboratorio 4: JDBC II](lab5/)
 Se pretende con este Lab que el alumno utlice JDBC y acceda a la BBDD en MySQL también mediante pool de conexiones (DataSource)
 
-## Laboratorio 6: JPA
+### [Laboratorio 6: JPA](lab6/)
 Se pretende con este Lab que el alumno utlice JPA y acceda a la BBDD en MySQL.
 
-## Laboratorio 7: Imágenes
+### [Laboratorio 7: Imágenes](lab7/)
 Se pretende con este Lab que el alumno almacene imágenes en la BBDD de MySQL.
 
-## Laboratorio 8: WebServices
+### [Laboratorio 8: WebServices](lab8/)
 Se pretende con este Lab que el alumno cree un Servidor y Cliente WS.
 
-## Laboratorio 9: JMS
+### [Laboratorio 9: JMS](lab9/)
 Se pretende con este Lab que el alumno interactúe con colas asíncronas de JMS.
+
+### [Laboratorio 10: Discos](lab10/)
+Basic MySQL WS with Maven.
+
+### [Laboratorio 11: Spring Data (JPA)](lab11/)
+Servicio web con Spring Data JPA.
+
+### [Laboratorio 12: Consumiendo servicios RESTful & Thymeleaf](lab12/)
+Consumir WS REST con Thymeleaf.
 
 
 ## Instalación del entorno (Labs 1-9)
