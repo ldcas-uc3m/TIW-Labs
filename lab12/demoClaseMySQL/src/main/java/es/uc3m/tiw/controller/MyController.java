@@ -8,15 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-//import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 import es.uc3m.tiw.domains.*;
 import es.uc3m.tiw.repositorys.AddressDAO;
 import es.uc3m.tiw.repositorys.UserDAO;
@@ -97,7 +89,7 @@ public class MyController {
 	}
 	
 	// Delete a user
-	@RequestMapping(value="/users/{id}", method = RequestMethod.DELETE)
+	@DeleteMapping("/users/{id}")
 	public @ResponseBody ResponseEntity<User> deleteUser(@PathVariable @Validated Long id) {
 		ResponseEntity<User> response;
 		User us = daous.findById(id).orElse(null);
@@ -111,6 +103,10 @@ public class MyController {
 	
 	}	
 	
+	@GetMapping(value="/user/{name}")
+	public @ResponseBody User get1UserByName(@PathVariable String name) {
+		return daous.findTop1ByName(name);
+	}
 	
 	/****************** OPERATIONS ON ADDRESSES ******************************************/
 	

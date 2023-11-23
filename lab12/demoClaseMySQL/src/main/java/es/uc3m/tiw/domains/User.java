@@ -1,12 +1,10 @@
 package es.uc3m.tiw.domains;
 
-import static javax.persistence.GenerationType.AUTO;
 
 import java.io.Serializable;
 import java.util.Set;
 
 import javax.persistence.*;
-import javax.transaction.Transactional;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

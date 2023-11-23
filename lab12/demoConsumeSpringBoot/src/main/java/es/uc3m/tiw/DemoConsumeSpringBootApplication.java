@@ -13,8 +13,8 @@ public class DemoConsumeSpringBootApplication {
 		SpringApplication.run(DemoConsumeSpringBootApplication.class, args);
 	}
 
-	@Bean
-	public RestTemplate restTemplate (RestTemplateBuilder builder) {
+    @Bean
+    RestTemplate restTemplate(RestTemplateBuilder builder) {
 		return builder.build();
 	}
 
