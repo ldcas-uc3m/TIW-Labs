@@ -56,7 +56,7 @@ cd demoMySQL/
 mvn spring-boot:run
 ```
 
-You can send requests through Postman with a GET to http://localhost:8081/discoss
+You can send requests through Postman with a GET to http://localhost:8081/discos
 
 
 VsCode extensions:
