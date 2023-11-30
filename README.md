@@ -38,6 +38,9 @@ Servicio web con Spring Data JPA.
 ### [Laboratorio 12: Consumiendo servicios RESTful & Thymeleaf](lab12/)
 Consumir WS REST con Thymeleaf.
 
+### [Laboratorio 13: Spring Security](lab13/)
+Servicio Web con Spring Security con credenciales en BBDD.
+
 
 ## Instalación del entorno (Labs 1-9)
 
