@@ -61,7 +61,7 @@ https://nexus.payara.fish/#browse/browse:payara-community:fish%2Fpayara%2Fdistri
     1. Abre la vista `Servers` en `Window` → `Show View` → `Other` → `Server` → `Server`.
     2. Ve a la vista `Servers` (abajo) y haz clic en `No servers are available. Click this link to create new server...` → `Payara` → `Payara`, y selecciona la versión 17 de Java y la dirección de la carpeta de payara (`payara5/`).
 
-## Ejecución
+## Ejecución (Labs 1-9)
 En Eclipse:
-    1. Importa el proyecto deseado desde `File` → `Open Projects From File System...` → `Directory` → <projecto deseado, e.g `<path-to>tiwclase1/`> → `Finish`.
-    2. Asegúrate de tener seleccionado el proyecto y haz clic en `Run` → `Run As` → `Run on Server` y selecciona tu servidor de Payara.
+1. Importa el proyecto deseado desde `File` → `Open Projects From File System...` → `Directory` → <projecto deseado, e.g `<path-to>tiwclase1/`> → `Finish`.
+2. Asegúrate de tener seleccionado el proyecto y haz clic en `Run` → `Run As` → `Run on Server` y selecciona tu servidor de Payara.
