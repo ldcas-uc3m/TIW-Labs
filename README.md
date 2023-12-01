@@ -41,6 +41,9 @@ Consumir WS REST con Thymeleaf.
 ### [Laboratorio 13: Spring Security](lab13/)
 Servicio Web con Spring Security con credenciales en BBDD.
 
+### [Laboratorio 14: MongoDB](lab14/)
+Chat con MongoDB.
+
 
 ## Instalación del entorno (Labs 1-9)
 
